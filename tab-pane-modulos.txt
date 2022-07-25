@@ -1,0 +1,188 @@
+<!--============================================================================================================================================
+CONTENIDO PARA MODULOS 
+=============================================================================================================================================-->
+<div class="tab-pane fade  mt-4 px-4" id="content-modulos" role="tabpanel" aria-labelledby="content-modulos-tab">
+
+	<div class="row">
+	
+	    <!--LISTADO DE MODULOS -->
+	    <div class="col-md-6">
+	
+	        <div class="card card-info card-outline shadow">
+	
+	            <div class="card-header">
+	
+	                <h3 class="card-title"><i class="fas fa-list"></i> Listado de Módulos</h3>
+	
+	            </div>
+	
+	            <div class="card-body">
+	
+	                <table id="tblModulos" class="display nowrap table-striped shadow rounded" style="width:100%">
+	
+	                    <thead class="bg-info text-left">
+	                        <th class="text-center">Acciones</th>
+	                        <th>id</th>
+	                        <th>orden</th>
+	                        <th>Módulo</th>
+	                        <th>Módulo Padre</th>
+	                        <th>Vista</th>
+	                        <th>Icono</th>
+	                        <th>F. Creación</th>
+	                        <th>F. Actualización</th>
+	                    </thead>
+	                    <tbody class="small text left">
+	
+	                    </tbody>
+	
+	                </table>
+	
+	            </div>
+	
+	        </div>
+	
+	    </div><!--/. col-md-6 -->
+	
+	    <!--FORMULARIO PARA REGISTRO Y EDICION -->
+	    <div class="col-md-3">
+	
+	        <div class="card card-info card-outline shadow">
+	
+	            <div class="card-header">
+	
+	                <h3 class="card-title"><i class="fas fa-edit"></i> Registro de Módulos</h3>
+	
+	            </div>
+	
+	            <div class="card-body">
+	
+	                <form method="post" class="needs-validation-registro-modulo" novalidate id="frm_registro_modulo">
+	
+	                    <div class="row">
+	
+	                        <div class="col-md-12">
+	
+	                            <div class="form-group mb-2">
+	
+	                                <label class="col-form-label" for="iptModulo">
+	
+	                                    <i class="fas fa-laptop fs-6"></i>
+	
+	                                    <span class="small">Módulo</span><span class="text-danger">*</span>
+	
+	                                </label>
+	
+	                                <input type="text" class="form-control form-control-sm" id="iptModulo" name="iptModulo" placeholder="Ingrese el módulo" required>
+	
+	                                <div class="invalid-feedback">Debe ingresar el módulo</div>
+	
+	                            </div>
+	
+	                        </div>                                        
+	
+	                        <div class="col-md-12">
+	
+	                            <div class="form-group mb-2">
+	
+	                                <label class="col-form-label" for="iptVistaModulo">
+	
+	                                    <i class="fas fa-code fs-6"></i>
+	
+	                                    <span class="small">Vista PHP</span>
+	
+	                                </label>
+	
+	                                <input type="text" class="form-control form-control-sm" id="iptVistaModulo" name="iptVistaModulo" placeholder="Ingrese la vista del módulo">
+	
+	                            </div>
+	
+	                        </div>
+	
+	                        <div class="col-md-12">
+	
+	                            <div class="form-group mb-2">
+	
+	                                <label class="col-form-label" for="iptIconoModulo">
+	
+	                                    <i class="fas fa-images fs-6"></i>
+	
+	                                    <span class="small">Icono</span><span class="text-danger">*</span>
+	
+	                                </label>
+	
+	                                <input type="text" class="form-control form-control-sm" id="iptIconoModulo" name="iptIconoModulo" value="far fa-circle" placeholder="Ingrese el ícono del módulo: far fa-circle" required>
+	
+	                                <div class="invalid-feedback">Debe ingresar el ícono del módulo</div>
+	
+	                            </div>
+	
+	                        </div>
+	
+	                        <div class="col-md-12">
+	
+	                            <div class="form-group m-0 mt-2">
+	
+	                                <button type="button" class="btn btn-success w-100" id="btnRegistrarModulo">Guardar Módulo</button>
+	
+	                            </div>
+	
+	                        </div>
+	
+	                    </div>
+	
+	                </form>
+	
+	            </div>
+	
+	        </div>
+	
+	    </div><!--/. col-md-3 -->
+	
+	    <!--ARBOL DE MODULOS PARA REORGANIZAR -->
+	    <div class="col-md-3">
+	
+	        <div class="card card-info card-outline shadow">
+	
+	            <div class="card-header">
+	
+	                <h3 class="card-title"><i class="fas fa-edit"></i> Organizar Módulos</h3>
+	
+	            </div>
+	
+	            <div class="card-body">
+	
+	                <div class="">
+	
+	                    <div>Modulos del Sistema</div>
+	
+	                    <div class="" id="arbolModulos"></div>
+	
+	                </div>
+	
+	                <hr>
+	
+	                <div class="row">
+	
+	                    <div class="col-md-12">
+	
+	                        <div class="text-center">
+	
+	                            <button id="btnReordenarModulos" class="btn btn-success mt-3 " style="width: 45%;">Organizar Módulos</button>
+	                            
+	                            <button id="btnReiniciar" class="btn btn-warning mt-3 " style="width: 45%;">Estado Inicial</button>
+	                        
+	                        </div>
+	                    
+	                    </div>
+	                
+	                </div>
+	
+	            </div>
+	
+	        </div>
+	
+	    </div><!--/. col-md-3 -->
+	    
+	</div><!--/.row -->
+
+</div><!-- /#content-modulos -->
